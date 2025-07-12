@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capabilities | Tropical Industrial Plastics</title>
+    <meta name="description" content="Explore our core capabilities, from CNC machining and custom fabrication to plastic supply and engineering consulting.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" x-data="{ open: false }">
+        <div class="container">
+            <a href="index.html" class="logo-text">
+                Tropical Industrial Plastics
+            </a>
+            <nav class="main-nav" :class="{ 'open': open }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="capabilities.html" class="active">Capabilities</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" @click="open = !open" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/5.jpg');">
+            <div class="page-hero-overlay">
+                <div class="container" data-aos="fade-up">
+                    <h1 class="page-title">Precision in Every Process</h1>
+                    <p class="page-subtitle">From raw material to finished component, we offer a comprehensive suite of plastic solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="capabilities-page-section" x-data="{ category: 'all' }">
+            <div class="container">
+                <div class="filter-controls" data-aos="fade-up">
+                    <button class="filter-btn" :class="{'active': category === 'all'}" @click="category = 'all'">All</button>
+                    <button class="filter-btn" :class="{'active': category === 'machining'}" @click="category = 'machining'">CNC Machining</button>
+                    <button class="filter-btn" :class="{'active': category === 'fabrication'}" @click="category = 'fabrication'">Fabrication</button>
+                    <button class="filter-btn" :class="{'active': category === 'supply'}" @click="category = 'supply'">Supply</button>
+                    <button class="filter-btn" :class="{'active': category === 'engineering'}" @click="category = 'engineering'">Engineering</button>
+                </div>
+
+                <div class="capabilities-item-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'machining'" x-transition>
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>CNC Turning & Milling</h3>
+                        <p>Multi-axis machining for creating complex geometries with tight tolerances.</p>
+                        <h4>Key Materials:</h4>
+                        <ul>
+                            <li>Delrin® (Acetal)</li>
+                            <li>Nylon</li>
+                            <li>Acrylic & Polycarbonate</li>
+                            <li>PEEK & Ultem®</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'machining'" x-transition>
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        <h3>Precision Cutting</h3>
+                        <p>Automated panel saws provide accurate, clean, and square cuts for any sheet material.</p>
+                        <h4>Key Materials:</h4>
+                        <ul>
+                            <li>HDPE & LDPE</li>
+                            <li>ABS</li>
+                            <li>PVC</li>
+                            <li>Polypropylene</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'fabrication'" x-transition>
+                        <i class="fa-solid fa-fire"></i>
+                        <h3>Heat Forming & Bending</h3>
+                        <p>Expert forming of thermoplastic sheets into custom shapes and angles.</p>
+                        <h4>Key Materials:</h4>
+                        <ul>
+                            <li>Acrylic</li>
+                            <li>Polycarbonate</li>
+                            <li>PETG</li>
+                            <li>Kydex®</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'fabrication'" x-transition>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Drilling & Fabrication</h3>
+                        <p>Complete assembly services including drilling, tapping, and component bonding.</p>
+                        <h4>Key Materials:</h4>
+                        <ul>
+                            <li>All machinable plastics</li>
+                            <li>Fasteners & Adhesives</li>
+                            <li>Polishing & Finishing</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'supply'" x-transition>
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Sheet & Rod Supply</h3>
+                        <p>Extensive inventory of industrial plastics, ready for quick shipment nationwide.</p>
+                        <h4>Key Materials:</h4>
+                        <ul>
+                            <li>Full range of thermoplastics</li>
+                            <li>Standard and custom sizes</li>
+                            <li>Cut-to-size services</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="capability-item-card" x-show="category === 'all' || category === 'engineering'" x-transition>
+                        <i class="fa-solid fa-drafting-compass"></i>
+                        <h3>Engineering Consulting</h3>
+                        <p>Partner with our experts for material selection and design-for-manufacturability.</p>
+                        <h4>Key Services:</h4>
+                        <ul>
+                            <li>CAD/CAM Support</li>
+                            <li>Prototyping</li>
+                            <li>Material Performance Analysis</li>
+                            <li>Cost Optimization</li>
+                        </ul>
+                        <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-layout">
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Tropical Industrial Plastics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

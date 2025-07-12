@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Industrial Plastics | Engineered Plastic Solutions</title>
+    <meta name="description" content="Tropical Industrial Plastics provides custom plastic solutions for commercial, industrial, and technical applications in Florida and nationwide.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" x-data="{ open: false }">
+        <div class="container">
+            <a href="index.html" class="logo-text" data-aos="fade-down">
+                Tropical Industrial Plastics
+            </a>
+            <nav class="main-nav" :class="{ 'open': open }">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" @click="open = !open" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-layout">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1 class="hero-title">Engineered Plastics for <strong>Every Industry</strong></h1>
+                    <p class="hero-subtitle">Florida-Based. Nationwide Reach.</p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-primary">Explore Capabilities</a>
+                        <a href="#" class="btn btn-secondary">Request a Quote</a>
+                    </div>
+                </div>
+                <div class="hero-image-container" data-aos="fade-left" data-aos-delay="200">
+                    <div class="hero-image"></div>
+                    <div class="hero-glass-overlay">
+                        <h4>Materials That Work. <br>Engineering That Lasts.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries-section" id="industries">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Industries We Serve</h2>
+                <div class="industries-grid">
+                    <div class="industry-card">
+                        <i class="fa-solid fa-plane-up"></i>
+                        <h3>Aerospace</h3>
+                    </div>
+                    <div class="industry-card">
+                        <i class="fa-solid fa-utensils"></i>
+                        <h3>Food Processing</h3>
+                    </div>
+                    <div class="industry-card">
+                        <i class="fa-solid fa-anchor"></i>
+                        <h3>Marine</h3>
+                    </div>
+                    <div class="industry-card">
+                        <i class="fa-solid fa-box-open"></i>
+                        <h3>Packaging</h3>
+                    </div>
+                    <div class="industry-card">
+                        <i class="fa-solid fa-kit-medical"></i>
+                        <h3>Medical</h3>
+                    </div>
+                    <div class="industry-card">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Custom Builds</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="capabilities-section">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">Core Capabilities</h2>
+                <div class="capabilities-grid">
+                    <div class="capability-card" x-data="{}" @mouseenter="$el.classList.add('hovered')" @mouseleave="$el.classList.remove('hovered')">
+                        <i class="fa-solid fa-robot capability-icon"></i>
+                        <h3>CNC Machining</h3>
+                        <p>High-precision, computer-controlled milling and turning for complex plastic components.</p>
+                    </div>
+                    <div class="capability-card" x-data="{}" @mouseenter="$el.classList.add('hovered')" @mouseleave="$el.classList.remove('hovered')">
+                        <i class="fa-solid fa-layer-group capability-icon"></i>
+                        <h3>Sheet & Rod Supply</h3>
+                        <p>A vast inventory of industrial-grade plastic sheets and rods ready for immediate shipment.</p>
+                    </div>
+                    <div class="capability-card" x-data="{}" @mouseenter="$el.classList.add('hovered')" @mouseleave="$el.classList.remove('hovered')">
+                        <i class="fa-solid fa-drafting-compass capability-icon"></i>
+                        <h3>Custom Fabrication</h3>
+                        <p>Bespoke solutions including heat forming, welding, and assembly for your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-tropical-section">
+            <div class="container why-tropical-layout">
+                <div class="why-tropical-image" data-aos="fade-right">
+                    <img src="images/2.jpg" alt="Industrial machinery at Tropical Industrial Plastics">
+                </div>
+                <div class="why-tropical-content" data-aos="fade-left" data-aos-delay="150">
+                    <h2 class="section-title">Why Tropical?</h2>
+                    <div class="why-item">
+                        <span>01</span>
+                        <div>
+                            <h3>Fast Turnarounds</h3>
+                            <p>Our streamlined processes ensure your project is completed on time, every time.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <span>02</span>
+                        <div>
+                            <h3>Material Expertise</h3>
+                            <p>We guide you to the perfect material for your application's performance and budget.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <span>03</span>
+                        <div>
+                            <h3>In-House Engineering</h3>
+                            <p>Our engineers partner with you to optimize designs for manufacturability and cost.</p>
+                        </div>
+                    </div>
+                     <div class="why-item">
+                        <span>04</span>
+                        <div>
+                            <h3>Trusted Since 1998</h3>
+                            <p>Decades of experience delivering quality and reliability to our partners.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container" data-aos="zoom-in-up">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">“The team at Tropical is unmatched. Their engineering support saved us thousands and improved our product durability tenfold. They are a true partner.”</p>
+                    <cite class="testimonial-author">— Michael Chen, Lead Engineer at Pharma-Pack Solutions</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-strip">
+            <div class="container cta-strip-content" data-aos="fade-up">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's build something that lasts. Reach out to our engineering team today.</p>
+                <a href="#" class="btn btn-primary btn-glow">Request a Quote</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-info">
+                    <h4>Tropical Industrial Plastics</h4>
+                    <p>11191 43rd St N Unit A, Clearwater, FL 33762</p>
+                    <p>
+                        <a href="mailto:sales@tropindtlplastics.com">sales@tropindtlplastics.com</a>
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Tropical Industrial Plastics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

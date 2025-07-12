@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tropical Industrial Plastics</title>
+    <meta name="description" content="Learn about the history, values, and team behind Tropical Industrial Plastics, a leader in custom plastic solutions.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header" x-data="{ open: false }">
+        <div class="container">
+            <a href="index.html" class="logo-text">
+                Tropical Industrial Plastics
+            </a>
+            <nav class="main-nav" :class="{ 'open': open }">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="capabilities.html">Capabilities</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" @click="open = !open" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('images/3.jpg');">
+            <div class="page-hero-overlay">
+                <div class="container" data-aos="fade-up">
+                    <h1 class="page-title">Engineering Excellence, Built on Trust.</h1>
+                    <p class="page-subtitle">We are more than a factory; we are your partners in material innovation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-intro-section">
+            <div class="container">
+                <div class="about-intro-grid">
+                    <div class="about-history" data-aos="fade-right">
+                        <h2 class="section-title" style="text-align: left;">Our Story</h2>
+                        <p>Founded in 1998, Tropical Industrial Plastics started with a simple mission: to provide Florida's burgeoning tech and marine industries with superior-quality plastic components and unparalleled service. We saw a need for a supplier who could not only deliver materials but also provide the engineering expertise to solve real-world challenges.</p>
+                        <p>From a small shop in Clearwater, we have grown into a nationwide supplier, but our core commitment to precision, partnership, and performance has never wavered. We invest continuously in our technology and our team to stay at the forefront of the industry.</p>
+                    </div>
+                    <div class="about-values" data-aos="fade-left" data-aos-delay="150">
+                        <h3>Our Core Values</h3>
+                        <ul class="values-list">
+                            <li><i class="fa-solid fa-microchip"></i> <strong>Innovation:</strong> We constantly explore new materials and techniques.</li>
+                            <li><i class="fa-solid fa-crosshairs"></i> <strong>Precision:</strong> We believe in measure twice, cut once. Quality is not negotiable.</li>
+                            <li><i class="fa-solid fa-handshake"></i> <strong>Partnership:</strong> Your success is our success. We work with you as an extension of your team.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leadership-quote-section">
+            <div class="container" data-aos="zoom-in-up">
+                <div class="leadership-quote">
+                    <img src="images/4.jpg" alt="Company leadership photo">
+                    <blockquote>
+                        <p>"Our greatest asset is our ability to listen. We listen to our clients' needs, we listen to the challenges of the materials, and we create solutions that speak for themselves."</p>
+                        <cite>— Jane Doe, Founder & Chief Engineer</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Our Journey</h2>
+                <div class="timeline" data-aos="fade-up">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1998</h4>
+                            <p>Tropical Industrial Plastics is founded in a small Clearwater, FL workshop.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2005</h4>
+                            <p>Acquired our first 5-axis CNC machine, expanding precision manufacturing capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2012</h4>
+                            <p>Expanded into the aerospace and medical industries with ISO 9001 certification.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2020</h4>
+                            <p>Moved to our current 20,000 sq. ft. state-of-the-art facility.</p>
+                        </div>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2025</h4>
+                            <p>Launched a new R&D division focused on sustainable and high-performance polymers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-info">
+                    <h4>Tropical Industrial Plastics</h4>
+                    <p>11191 43rd St N Unit A, Clearwater, FL 33762</p>
+                    <p>
+                        <a href="mailto:sales@tropindtlplastics.com">sales@tropindtlplastics.com</a>
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Tropical Industrial Plastics. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
